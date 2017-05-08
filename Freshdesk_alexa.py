@@ -1,6 +1,5 @@
 import json
 from Get_Fresh_Desk_opentickets import GetFreshDeskCount
-#print "hai"
 def lambda_handler(event, context):
     # if (event["session"]["application"]["applicationId"] !=
     #         "amzn1.echo-sdk-ams.app.bd304b90-xxxx-xxxx-xxxx-xxxxd4772bab"):
@@ -54,10 +53,11 @@ def GetFreshDeskCount_alexa():
     session_attributes = {}
     card_title = ""
     reprompt_text = ""
-    should_end_session = False
+    should_end_session = True
     a = GetFreshDeskCount()
     print a
-    speech_output = a
+    speech_output =  "Your have %s open tickets in fresh desk"%a
+    #speech_output = "Your have %d"
 
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
