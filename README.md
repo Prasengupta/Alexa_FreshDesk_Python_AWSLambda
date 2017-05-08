@@ -4,10 +4,13 @@ A sample AWS lambda function which helps for writing skills for Amazon Alexa Ech
 Concepts	
 This simple sample has an external dependencies or session management, and shows the most basic example of how to create a Lambda function for handling Alexa Skill requests.
 Setup
+
 You need to install below libraries to test in the local machine, I have already included them in the repository 
 Libraries Needed
 1.	Requests
 2.	Json 
+
+
 AWS Lambda Setup
 1.	Go to the AWS Console and click on the Lambda link. Note: ensure you are in us-east or you won't be able to use Alexa with Lambda.
 2.	Click on the Create a Lambda Function or Get Started Now button.
