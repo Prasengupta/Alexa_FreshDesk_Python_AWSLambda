@@ -56,8 +56,7 @@ def GetFreshDeskCount_alexa():
     should_end_session = True
     a = GetFreshDeskCount()
     print a
-    speech_output =  "Your have %s open tickets in fresh desk"%a
-    #speech_output = "Your have %d"
+    speech_output =  "You have %s open tickets in fresh desk"%a
 
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
